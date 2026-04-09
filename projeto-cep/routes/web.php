@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('usuario');
 });
 
 use App\Http\Controllers\UsuarioController; //importa a classe usuario controoller que está em uma pasta
