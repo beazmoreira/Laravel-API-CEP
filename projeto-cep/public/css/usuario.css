@@ -72,3 +72,16 @@ button:hover{
     background-color: blueviolet;
     
 }
+
+/* CSS Feito pela IA: */
+.erro {
+    color: red;
+}
+
+#mensagem.erro-geral {
+    color: red;
+}
+
+#mensagem.sucesso {
+    color: green;
+}

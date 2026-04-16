@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Usuario</title>
     <link rel="stylesheet" href="{{ asset('css/usuario.css') }}">
+    @vite('resources/js/script.js')
 </head>
 
 <body>
@@ -16,43 +17,50 @@
             <div class="center">
                 <label for="nome">Nome:</label>
                 <input type='text' name='nome' id="nome">
+                <span class="erro" id="erro-nome"></span>
             </div>
 
             <div class="center">
                 <label for="email">Email:</label>
                 <input type='text' name='email' id="email">
+                <span class="erro" id="erro-email"></span>
             </div>
 
             <div class="center">
                 <label for="cep">CEP:</label>
                 <input type='text' name='cep' id="cep">
+                <span class="erro" id="erro-cep"></span>
             </div>
 
             <div class="center">
                 <label for="rua">Rua:</label>
                 <input type='text' name='rua' id="rua">
+                <span class="erro" id="erro-rua"></span>
             </div>
 
             <div class="center">
                 <label for="bairro">Bairro:</label>
                 <input type='text' name='bairro' id="bairro">
+                <span class="erro" id="erro-bairro"></span>
             </div>
 
             <div class="center">
                 <label for="cidade">Cidade:</label>
                 <input type='text' name='cidade' id="cidade">
+                <span class="erro" id="erro-cidade"></span>
             </div>
 
             <div class="center">
                 <label for="estado">Estado:</label>
                 <input type='text' name='estado' id="estado">
+                <span class="erro" id="erro-estado"></span>
             </div>
 
-            <button>SALVAR</button>
+            <button id="cadastrar">SALVAR</button>
+            <span id="mensagem"></span>
         </form>
     </nav>
 </body>
-
 </html>
 
 <!--Formulário, para o usuário digitar informações para o cadastro.
